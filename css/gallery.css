@@ -8,11 +8,12 @@
 
 .construction{
   display:flex;
+  flex-direction:column;
   height:100vh;
   color:black;
   background-color:white;
   font-size:4rem;
-  align-items:center;
+  text-align:center;
   justify-content:center;
 }
 
