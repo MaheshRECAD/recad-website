@@ -6,4 +6,11 @@
   object-fit: contain;
 }
 
+h1{
+  height:100vh;
+  color:white;
+  font-size:4rem;
+  align-items:center;
+}
+
 
