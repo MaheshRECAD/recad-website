@@ -6,7 +6,7 @@
   object-fit: contain;
 }
 
-h1{
+.construction{
   display:flex;
   height:100vh;
   color:black;
