@@ -1,12 +1,9 @@
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10px;
-  row-gap: 10px;
-}
+
 
 .image {
   width: 100%;
 
   object-fit: contain;
 }
+
+
