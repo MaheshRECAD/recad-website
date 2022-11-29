@@ -53,7 +53,7 @@
 
         <h2> Please fill in the form below, I will contact you within the next 2-4 working hours</h2></div></section>
         
-      <form action="https://httpbin.org/post" method="post" target="_blank">
+      <form onsubmit="sendEmail(); reset();return false;">
         <fieldset>
             <legend>Contact Me</legend>
             <p><input type="text" name="customer-name" id="customer-name" placeholder="Name*" autocomplete="on" required autofocus>
@@ -80,7 +80,31 @@
 
 
 
-      </form>     
+      </form>    
+        
+        <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+   <script> 
+       function sendEmail(){
+       Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "maheshseeramsetti@gmail.com",
+    Password : "4EC662269BE5151F4BD89639A96B3FB30915",
+    To : 'maheshseeramsetti@gmail.com',
+    From :document.getElementById("customer-email").value,
+    Subject : "New Contact form for "+ document.getElementById("service-type").value +"services",
+    Body : "Name: "+document.getElementById("customer-name").value 
+           +"<br> Email: "+document.getElementById("customer-email").value 
+           +"<br> Phone: "+document.getElementById("customer-contact").value 
+           +"<br> Place: "+document.getElementById("customer-location").value 
+           +"<br> Service-Type: "+document.getElementById("service-type").value 
+           +"<br> Subject: "+document.getElementById("subject").value 
+           +"<br> Message: "+document.getElementById("message").value 
+}).then(
+  message => alert("Message sent sucessfully")
+       );
+       }
+        </script>
     </main>
 
 
