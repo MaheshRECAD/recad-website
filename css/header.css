@@ -299,7 +299,7 @@ html {
   color: rgb(0, 0, 0);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 20000px) {
   .hamburger {
     display: none;
   }
