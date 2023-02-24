@@ -193,7 +193,7 @@
 }
 .section2-content-box figure:hover div:nth-child(2) {
   transform: translate(120px, 100px) rotate(380deg) scale(0.75);
-  background-image: url(../images/navy.jpg);
+  background-image: url(../images/demo 3.jpg);
   background-size: contain;
   box-shadow: 0px 0px 20px 10px rgba(117, 117, 117, 0.25);
   transition-timing-function: ease-in-out;
@@ -204,7 +204,7 @@
   transform: translate(-165px, -100px) rotate(340deg) scale(0.75);
   box-shadow: 0px 0px 20px 10px rgba(117, 117, 117, 0.25);
 
-  background-image: url(../images/mypic1.jpg);
+  background-image: url(../images/demo 4.jpg);
   background-size: contain;
   transition-timing-function: ease-in-out;
   transition-duration: 0.75s;
@@ -222,7 +222,7 @@
   transform: translate(-120px, 100px) rotate(340deg) scale(0.75);
   box-shadow: 0px 0px 20px 10px rgba(117, 117, 117, 0.25);
 
-  background-image: url(../images/navy.jpg);
+  background-image: url(../images/demo 2.jpg);
   background-size: contain;
   transition-timing-function: ease-in-out;
   transition-duration: 0.75s;
