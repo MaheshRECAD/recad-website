@@ -101,6 +101,7 @@ html {
   border-top: 2px solid rgb(221, 220, 220);
   text-decoration: none;
   width: 100%;
+
 }
 .Header-button:first-child {
   border-top: 2px solid transparent;
@@ -124,14 +125,22 @@ html {
   right: 0;
   opacity: 1;
 }
-.hamburger {
+.hamburger,.pseudohamburger {
   height: 40px;
   margin-right: 10px;
 }
 
-.header:hover .header-right {
-  display: flex;
+
+
+.pseudohamburger
+{
+
+display: none;
 }
+
+/*.header:hover .header-right {
+  display: flex;
+}*/
 
 .chatbox {
   display: flex;
@@ -169,10 +178,10 @@ html {
   padding: 0px;
 }
 
-.hamburger {
+.hamburger,.pseudohamburger {
   opacity: 1;
 }
-.hamburger:hover {
+.hamburger:hover,.pseudohamburger:hover {
   cursor: pointer;
   background-color: rgba(70, 70, 70, 0.521);
   border-radius: 5px;
