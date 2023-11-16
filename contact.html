@@ -83,29 +83,7 @@
 
       </form>    
         
-        <script src="https://smtpjs.com/v3/smtp.js">
-</script>
-   <script> 
-       function sendEmail(){
-       Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "maheshseeramsetti@gmail.com",
-    Password : "4EC662269BE5151F4BD89639A96B3FB30915",
-    To : 'maheshseeramsetti@gmail.com',
-    From :document.getElementById("customer-email").value,
-    Subject : "New Contact form for "+ document.getElementById("service-type").value +"services",
-    Body : "Name: "+document.getElementById("customer-name").value 
-           +"<br> Email: "+document.getElementById("customer-email").value 
-           +"<br> Phone: "+document.getElementById("customer-contact").value 
-           +"<br> Place: "+document.getElementById("customer-location").value 
-           +"<br> Service-Type: "+document.getElementById("service-type").value 
-           +"<br> Subject: "+document.getElementById("subject").value 
-           +"<br> Message: "+document.getElementById("message").value 
-}).then(
-  message => alert("Message sent sucessfully")
-       );
-       }
-        </script>
+        
     </main>
 
 
@@ -206,5 +184,28 @@
       >
     </div>
   </footer>
+          <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+     <script> 
+         function sendEmail(){
+         Email.send({
+          Host : "smtp.elasticemail.com",
+    Username : "maheshseeramsetti@gmail.com",
+    Password : "4EC662269BE5151F4BD89639A96B3FB30915",
+      To : 'maheshsetti6@gmail.com',
+      From :'maheshseeramsetti@gmail.com',
+      Subject : "New Contact form for "+ document.getElementById("service-type").value +"services",
+      Body : "Name: "+document.getElementById("customer-name").value 
+             +"<br> Email: "+document.getElementById("customer-email").value 
+             +"<br> Phone: "+document.getElementById("customer-contact").value 
+             +"<br> Place: "+document.getElementById("customer-location").value 
+             +"<br> Service-Type: "+document.getElementById("service-type").value 
+             +"<br> Subject: "+document.getElementById("subject").value 
+             +"<br> Message: "+document.getElementById("message").value 
+  }).then(
+    message => alert(message)
+         );
+         }
+          </script> 
       </body>
       <script src="script/script.js"></script>
