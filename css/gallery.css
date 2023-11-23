@@ -16,7 +16,137 @@
   background-size: cover;
   font-size:4rem;
   text-align:center;
-  justify-content:center;
+  justify-content:space-around;
 }
 
+.cad_model{
+  display:flex; 
+  flex-wrap: wrap;  
+  margin-top: 80px;
+  justify-content: space-evenly;
+}
+
+.image_panel{
+  position:relative;
+  background-color:  rgb(85, 84, 84);;
+  border:none;
+  border-radius:5px;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-around;
+  align-items: center;
+  width :31vw;
+  min-width: 290px;
+  height: 20vh;
+  min-height: 200px;
+  margin: 0px 0px 20px 0px;
+  
+
+}
+
+.d_model{
+  
+  border-width: 2px;
+  background-color: rgba(85, 84, 84, 0);
+  margin:1vw;
+  border-radius: 50%;
+  width :25vw;
+  min-width: 200px;
+  height:25vw;
+  min-height: 200px;
+}
+
+.imageTitle{
+  font-family:roboto;
+  font-size: 24px;
+  position:absolute;
+  top:10%;
+  left:0px;
+  font-weight: 800;
+  color: rgb(133, 132, 132);
+  background-color: rgb(255, 204, 0);
+  padding: 5px;
+  border-radius: 0px 24px 24px 0px;
+  text-align: center;
+}
+
+.image_panel_Expand{
+  flex-direction: column;
+  position: absolute;
+  top:-10px;
+  left:0px;
+  width :31vw;
+  min-width: 290px;
+  height: 20vh;
+  min-height: 200px;
+  background-color: rgba(6, 6, 6, 0.989);
+  z-index:-1;
+  border-radius: 8px;
+  transition-property:opacity z-index width height;
+  transition-duration: .5s;
+  transition-delay:0s;
+  
+  align-items: center;
+  justify-content: center;
+  opacity:0;
+}
+.image_panel:hover .image_panel_Expand{
+  
+  display: flex;
+  
+  cursor: pointer;
+  width :40vw;
+  min-width: 300px;
+  height: 70vh;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 3;
+  transition-property:opacity z-index width height;
+  transition-duration: 0.5s;
+  transition-delay:.5s;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2)
+}
+.d_model_expand{
+  
+  width :100%;
+  
+  height:fit-content;
+  border-radius: 50%;
+}
+
+.imageTitleExpand{
+  font-family:roboto;
+  font-size: 32px;
+   font-weight: 800;
+  color: rgb(255, 255, 255);
+  
+  padding:0 5px 0 5px;
+  text-align: center;
+}
+
+.imageContent{
+  font-family:roboto;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  
+}
+
+.imageDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  
+}
+.imageDetails p{
+  font-family:roboto;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+}
 
